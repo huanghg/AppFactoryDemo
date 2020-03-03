@@ -1,0 +1,24 @@
+{
+  "name": "UserCenter",
+  "version": "0.0.1",
+  "summary": "UserCenter",
+  "description": "Test",
+  "homepage": "./",
+  "license": "MIT",
+  "authors": {
+    "Haiguang Huang": "haiguang.huang@shopee.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "path": "./"
+  },
+  "source_files": [
+    "./Classes",
+    "Classes/*",
+    "./Classes/*.{h,m,mm,swift}",
+    "./Classes/**/*.{h,m,mm,swift}"
+  ],
+  "resources": "./Resources/*"
+}
