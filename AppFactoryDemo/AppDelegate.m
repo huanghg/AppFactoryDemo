@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <DemoAdater/DemoAdater.h>
+#import <IOCServiceModule/IOCServiceModule.h>
 
 @interface AppDelegate ()
 

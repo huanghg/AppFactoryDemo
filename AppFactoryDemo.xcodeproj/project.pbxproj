@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75130A74240672A0004308D5 /* UserCenterModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758BAD8423CD73DC00FB24BF /* UserCenterModule.framework */; };
 		75130A7F2407A36A004308D5 /* RouterCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 75130A7D2407A36A004308D5 /* RouterCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75130A822407A36A004308D5 /* RouterCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75130A7B2407A36A004308D5 /* RouterCenter.framework */; };
 		75130A832407A36A004308D5 /* RouterCenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75130A7B2407A36A004308D5 /* RouterCenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7579508D23E1E54300C999AA /* IOCServiceModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758BADDE23CDA6DF00FB24BF /* IOCServiceModule.framework */; };
+		7580609024289C00000D7CBB /* UserCenterModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758BAD8423CD73DC00FB24BF /* UserCenterModule.framework */; };
 		758BAD3823CD613200FB24BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 758BAD3723CD613200FB24BF /* AppDelegate.m */; };
 		758BAD3B23CD613200FB24BF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 758BAD3A23CD613200FB24BF /* SceneDelegate.m */; };
 		758BAD3E23CD613200FB24BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758BAD3D23CD613200FB24BF /* ViewController.m */; };
@@ -28,10 +28,24 @@
 		758BAD9F23CD758D00FB24BF /* UserCenterDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 758BAD9D23CD758D00FB24BF /* UserCenterDelegate.m */; };
 		758BADA923CD77BF00FB24BF /* DemoAdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 758BADA723CD77BF00FB24BF /* DemoAdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		758BADB223CD77F600FB24BF /* UserCenterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 758BADB123CD77F600FB24BF /* UserCenterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		758BADE223CDA6DF00FB24BF /* IOCServiceModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 758BADE023CDA6DF00FB24BF /* IOCServiceModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		758BADEC23CDA6FF00FB24BF /* IOCServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 758BADEA23CDA6FF00FB24BF /* IOCServiceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		758BADED23CDA6FF00FB24BF /* IOCServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 758BADEB23CDA6FF00FB24BF /* IOCServiceFactory.m */; };
-		758BADF123CDA9E900FB24BF /* IOCServiceAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 758BADEE23CDA8E900FB24BF /* IOCServiceAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758C02692410A3AD00C1442C /* RouterCenterService.h in Headers */ = {isa = PBXBuildFile; fileRef = 75130A872407A399004308D5 /* RouterCenterService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758C026C2412018C00C1442C /* UserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C026A2412018C00C1442C /* UserInfo.h */; };
+		758C026D2412018C00C1442C /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 758C026B2412018C00C1442C /* UserInfo.m */; };
+		758C028F2412407200C1442C /* ReactObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C02822412407200C1442C /* ReactObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758C02902412407200C1442C /* ReactObserverAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C02832412407200C1442C /* ReactObserverAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758C02922412407200C1442C /* ReactSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 758C02852412407200C1442C /* ReactSignal.m */; };
+		758C02942412407200C1442C /* ReactObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 758C02872412407200C1442C /* ReactObserver.m */; };
+		758C02952412407200C1442C /* ReactSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C02882412407200C1442C /* ReactSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758C02962412407200C1442C /* IOCServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C028A2412407200C1442C /* IOCServiceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758C02972412407200C1442C /* IOCServiceModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C028B2412407200C1442C /* IOCServiceModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758C02982412407200C1442C /* IOCSingletonProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C028C2412407200C1442C /* IOCSingletonProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758C02992412407200C1442C /* IOCServiceAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C028D2412407200C1442C /* IOCServiceAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758C029A2412407200C1442C /* IOCServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 758C028E2412407200C1442C /* IOCServiceFactory.m */; };
+		758C029D24124E1700C1442C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758C029C24124E1700C1442C /* TestViewController.m */; };
+		758C02A5241259D800C1442C /* NSObject+Swizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C02A3241259D800C1442C /* NSObject+Swizzle.h */; };
+		758C02A6241259D800C1442C /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 758C02A4241259D800C1442C /* NSObject+Swizzle.m */; };
+		758C02A924126CD400C1442C /* NSObject+Observer.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C02A724126CD400C1442C /* NSObject+Observer.h */; };
+		758C02AA24126CD400C1442C /* NSObject+Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 758C02A824126CD400C1442C /* NSObject+Observer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,11 +105,25 @@
 		758BADA823CD77BF00FB24BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		758BADB123CD77F600FB24BF /* UserCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCenterProtocol.h; sourceTree = "<group>"; };
 		758BADDE23CDA6DF00FB24BF /* IOCServiceModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IOCServiceModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		758BADE023CDA6DF00FB24BF /* IOCServiceModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOCServiceModule.h; sourceTree = "<group>"; };
 		758BADE123CDA6DF00FB24BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		758BADEA23CDA6FF00FB24BF /* IOCServiceFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOCServiceFactory.h; sourceTree = "<group>"; };
-		758BADEB23CDA6FF00FB24BF /* IOCServiceFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOCServiceFactory.m; sourceTree = "<group>"; };
-		758BADEE23CDA8E900FB24BF /* IOCServiceAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOCServiceAnnotation.h; sourceTree = "<group>"; };
+		758C026A2412018C00C1442C /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		758C026B2412018C00C1442C /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		758C02822412407200C1442C /* ReactObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactObserver.h; sourceTree = "<group>"; };
+		758C02832412407200C1442C /* ReactObserverAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactObserverAnnotation.h; sourceTree = "<group>"; };
+		758C02852412407200C1442C /* ReactSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactSignal.m; sourceTree = "<group>"; };
+		758C02872412407200C1442C /* ReactObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactObserver.m; sourceTree = "<group>"; };
+		758C02882412407200C1442C /* ReactSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactSignal.h; sourceTree = "<group>"; };
+		758C028A2412407200C1442C /* IOCServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCServiceFactory.h; sourceTree = "<group>"; };
+		758C028B2412407200C1442C /* IOCServiceModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCServiceModule.h; sourceTree = "<group>"; };
+		758C028C2412407200C1442C /* IOCSingletonProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCSingletonProtocol.h; sourceTree = "<group>"; };
+		758C028D2412407200C1442C /* IOCServiceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCServiceAnnotation.h; sourceTree = "<group>"; };
+		758C028E2412407200C1442C /* IOCServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOCServiceFactory.m; sourceTree = "<group>"; };
+		758C029B24124E1700C1442C /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		758C029C24124E1700C1442C /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		758C02A3241259D800C1442C /* NSObject+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
+		758C02A4241259D800C1442C /* NSObject+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
+		758C02A724126CD400C1442C /* NSObject+Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Observer.h"; sourceTree = "<group>"; };
+		758C02A824126CD400C1442C /* NSObject+Observer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Observer.m"; sourceTree = "<group>"; };
 		B343C21B53E37DAFFBBC7882 /* Pods-AppFactoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFactoryDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppFactoryDemo/Pods-AppFactoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,8 +139,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7580609024289C00000D7CBB /* UserCenterModule.framework in Frameworks */,
 				75130A822407A36A004308D5 /* RouterCenter.framework in Frameworks */,
-				75130A74240672A0004308D5 /* UserCenterModule.framework in Frameworks */,
 				7579508D23E1E54300C999AA /* IOCServiceModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +222,8 @@
 				758BAD3A23CD613200FB24BF /* SceneDelegate.m */,
 				758BAD3C23CD613200FB24BF /* ViewController.h */,
 				758BAD3D23CD613200FB24BF /* ViewController.m */,
+				758C029B24124E1700C1442C /* TestViewController.h */,
+				758C029C24124E1700C1442C /* TestViewController.m */,
 				758BAD3F23CD613200FB24BF /* Main.storyboard */,
 				758BAD4223CD613400FB24BF /* Assets.xcassets */,
 				758BAD4423CD613400FB24BF /* LaunchScreen.storyboard */,
@@ -213,6 +243,8 @@
 				758BAD9D23CD758D00FB24BF /* UserCenterDelegate.m */,
 				758BAD9023CD74FA00FB24BF /* UserCenter.h */,
 				758BAD9123CD74FA00FB24BF /* UserCenter.m */,
+				758C026A2412018C00C1442C /* UserInfo.h */,
+				758C026B2412018C00C1442C /* UserInfo.m */,
 				758BAD8723CD73DC00FB24BF /* Info.plist */,
 			);
 			path = UserCenterModule;
@@ -231,13 +263,47 @@
 		758BADDF23CDA6DF00FB24BF /* IOCServiceModule */ = {
 			isa = PBXGroup;
 			children = (
-				758BADE023CDA6DF00FB24BF /* IOCServiceModule.h */,
-				758BADEE23CDA8E900FB24BF /* IOCServiceAnnotation.h */,
-				758BADEA23CDA6FF00FB24BF /* IOCServiceFactory.h */,
-				758BADEB23CDA6FF00FB24BF /* IOCServiceFactory.m */,
+				758C02A2241259CA00C1442C /* Swizzle */,
+				758C02892412407200C1442C /* IOCService */,
+				758C02812412407200C1442C /* ReactObserver */,
 				758BADE123CDA6DF00FB24BF /* Info.plist */,
 			);
 			path = IOCServiceModule;
+			sourceTree = "<group>";
+		};
+		758C02812412407200C1442C /* ReactObserver */ = {
+			isa = PBXGroup;
+			children = (
+				758C02832412407200C1442C /* ReactObserverAnnotation.h */,
+				758C02822412407200C1442C /* ReactObserver.h */,
+				758C02872412407200C1442C /* ReactObserver.m */,
+				758C02882412407200C1442C /* ReactSignal.h */,
+				758C02852412407200C1442C /* ReactSignal.m */,
+			);
+			path = ReactObserver;
+			sourceTree = "<group>";
+		};
+		758C02892412407200C1442C /* IOCService */ = {
+			isa = PBXGroup;
+			children = (
+				758C028D2412407200C1442C /* IOCServiceAnnotation.h */,
+				758C028A2412407200C1442C /* IOCServiceFactory.h */,
+				758C028E2412407200C1442C /* IOCServiceFactory.m */,
+				758C028B2412407200C1442C /* IOCServiceModule.h */,
+				758C028C2412407200C1442C /* IOCSingletonProtocol.h */,
+			);
+			path = IOCService;
+			sourceTree = "<group>";
+		};
+		758C02A2241259CA00C1442C /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				758C02A3241259D800C1442C /* NSObject+Swizzle.h */,
+				758C02A4241259D800C1442C /* NSObject+Swizzle.m */,
+				758C02A724126CD400C1442C /* NSObject+Observer.h */,
+				758C02A824126CD400C1442C /* NSObject+Observer.m */,
+			);
+			path = Swizzle;
 			sourceTree = "<group>";
 		};
 		B182C04B1C2F992B7A67A210 /* Pods */ = {
@@ -256,6 +322,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758C02692410A3AD00C1442C /* RouterCenterService.h in Headers */,
 				75130A7F2407A36A004308D5 /* RouterCenter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +334,7 @@
 				758BAD9223CD74FA00FB24BF /* UserCenter.h in Headers */,
 				758BAD9E23CD758D00FB24BF /* UserCenterDelegate.h in Headers */,
 				758BAD9A23CD756000FB24BF /* UserCenterScene.h in Headers */,
+				758C026C2412018C00C1442C /* UserInfo.h in Headers */,
 				758BAD8823CD73DC00FB24BF /* UserCenterModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,9 +352,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758BADF123CDA9E900FB24BF /* IOCServiceAnnotation.h in Headers */,
-				758BADEC23CDA6FF00FB24BF /* IOCServiceFactory.h in Headers */,
-				758BADE223CDA6DF00FB24BF /* IOCServiceModule.h in Headers */,
+				758C02972412407200C1442C /* IOCServiceModule.h in Headers */,
+				758C02962412407200C1442C /* IOCServiceFactory.h in Headers */,
+				758C02A924126CD400C1442C /* NSObject+Observer.h in Headers */,
+				758C02952412407200C1442C /* ReactSignal.h in Headers */,
+				758C02A5241259D800C1442C /* NSObject+Swizzle.h in Headers */,
+				758C02992412407200C1442C /* IOCServiceAnnotation.h in Headers */,
+				758C028F2412407200C1442C /* ReactObserver.h in Headers */,
+				758C02902412407200C1442C /* ReactObserverAnnotation.h in Headers */,
+				758C02982412407200C1442C /* IOCSingletonProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +589,7 @@
 				758BAD3823CD613200FB24BF /* AppDelegate.m in Sources */,
 				758BAD4923CD613400FB24BF /* main.m in Sources */,
 				758BAD3B23CD613200FB24BF /* SceneDelegate.m in Sources */,
+				758C029D24124E1700C1442C /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758C026D2412018C00C1442C /* UserInfo.m in Sources */,
 				758BAD9B23CD756000FB24BF /* UserCenterScene.m in Sources */,
 				758BAD9323CD74FA00FB24BF /* UserCenter.m in Sources */,
 				758BAD9F23CD758D00FB24BF /* UserCenterDelegate.m in Sources */,
@@ -539,7 +615,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758BADED23CDA6FF00FB24BF /* IOCServiceFactory.m in Sources */,
+				758C02A6241259D800C1442C /* NSObject+Swizzle.m in Sources */,
+				758C02922412407200C1442C /* ReactSignal.m in Sources */,
+				758C029A2412407200C1442C /* IOCServiceFactory.m in Sources */,
+				758C02AA24126CD400C1442C /* NSObject+Observer.m in Sources */,
+				758C02942412407200C1442C /* ReactObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,8 +820,8 @@
 			baseConfigurationReference = B343C21B53E37DAFFBBC7882 /* Pods-AppFactoryDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9C7NQT532M;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppFactoryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -749,6 +829,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AirPay.AppFactoryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -758,8 +839,8 @@
 			baseConfigurationReference = 2E79EA09F5B3B59545FA20D6 /* Pods-AppFactoryDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9C7NQT532M;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppFactoryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -767,6 +848,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AirPay.AppFactoryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

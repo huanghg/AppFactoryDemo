@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double RouterCenterVersionNumber;
 FOUNDATION_EXPORT const unsigned char RouterCenterVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RouterCenter/PublicHeader.h>
-
+#import "RouterCenterService.h"
 

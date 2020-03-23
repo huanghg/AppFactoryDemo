@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @IOCService(UserCenterProtocol, UserCenter)
-@interface UserCenter : NSObject <UserCenterProtocol>
+@interface UserCenter : NSObject <UserCenterProtocol, IOCSingletonProtocol>
 
 @end
 

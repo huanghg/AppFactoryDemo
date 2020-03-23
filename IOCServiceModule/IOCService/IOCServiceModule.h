@@ -17,4 +17,6 @@ FOUNDATION_EXPORT const unsigned char IOCServiceModuleVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <IOCServiceModule/PublicHeader.h>
 #import "IOCServiceAnnotation.h"
 #import "IOCServiceFactory.h"
+#import "IOCSingletonProtocol.h"
+#import "ReactObserverAnnotation.h"
 

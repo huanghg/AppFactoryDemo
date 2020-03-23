@@ -10,7 +10,6 @@
 #define RouterCenterService_h
 
 typedef struct router_service {
-    const char* serviceName;
     const char* path;
     const char* className;
 #ifdef DEBUG
@@ -19,25 +18,25 @@ typedef struct router_service {
 #endif
 }RouterCenterService;
 
-#define ServiceSectName "RouterCenterService"
+#define RouterCenterSectName "RouterCenter"
 
 #ifdef DEBUG
 
-#define _RouterCenterService(service_protocol, implementation, name) protocol service_protocol;  \
-    const RouterCenterService k##service_protocol##_service \
+#define _RouterCenterService(path, className, name) class NSObject;  \
+    const RouterCenterService k##className##_##path##_service \
     __attribute__((used, section(SEG_DATA "," name))) \
-    = {#service_protocol, #implementation, __FILE__, __LINE__};
+= {#path, #className, __FILE__, __LINE__};
 
-#define Router(service_protocol, implementation) _RouterCenterService(service_protocol, implementation, ServiceSectName)
+#define router(path, className) _RouterCenterService(path, className, RouterCenterSectName)
 
 #else
 
 #define _IOCService(service_protocol, implementation, name) protocol service_protocol;  \
     const IOCService k##service_protocol##_service \
     __attribute__((used, section(SEG_DATA "," name))) \
-    = {#service_protocol, #implementation};
+    = {#service_protocol, #implementation};
 
-#define IOCService(service_protocol, implementation) _IOCService(service_protocol, implementation, ServiceSectName)
+#define IOCService(service_protocol, implementation) _IOCService(service_protocol, implementation, RouterCenterSectName)
 
 #endif
 

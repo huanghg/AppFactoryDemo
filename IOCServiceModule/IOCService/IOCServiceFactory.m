@@ -10,6 +10,7 @@
 #include <mach-o/getsect.h>
 #include <mach-o/dyld.h>
 #import "IOCServiceAnnotation.h"
+#import "IOCSingletonProtocol.h"
 
 @implementation IOCServiceFactory
 
@@ -24,7 +25,7 @@ static void LoadConfigAndRegisterService(const struct mach_header_t* mh, intptr_
     size_t byteCount = 0;
     IOCService *data = (IOCService *)getsectiondata(mh,
                                                     SEG_DATA,
-                                                    ServiceSectName,
+                                                    IOCServiceSectName,
                                                     &byteCount);
     if (data) {
         int idx = 0;
@@ -80,12 +81,16 @@ BOOL IOCRegisterService(Protocol *protocol, Class clazz) {
 
 id IOCServiceInstance(Protocol *protocol) {
     Class clazz = IOCServiceClass(protocol);
+    if ([clazz conformsToProtocol:@protocol(IOCSingletonProtocol)] &&
+        [clazz respondsToSelector:@selector(ioc_sharedInstance)]) {
+        return [clazz ioc_sharedInstance];
+    }
     return [[clazz alloc] init];
 }
 
 id IOCServiceClass(Protocol *protocol) {
     Class clazz = servicesDict[NSStringFromProtocol(protocol)];
-    NSCAssert(nil != clazz, @"协议 %@ 没有绑定成功", NSStringFromProtocol(protocol));
+//    NSCAssert(nil != clazz, @"协议 %@ 没有绑定成功", NSStringFromProtocol(protocol));
     return clazz;
 }
 
